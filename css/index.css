@@ -23,18 +23,20 @@ body{
   align-items: center;
   gap: 10px;  /* space between icon & text */
 }
-#loganame,a{
-    text-decoration: none;
-  font-family: fantasy;     /* your chosen font */
-  font-style: normal;       /* ensures not italic */
+#logoname a {
+  text-decoration: none;
+  font-family: fantasy;
+  font-style: normal;
   color: black; 
   padding: 5px;
   border-radius: 5px;
 }
-#loganame,a:hover{
+
+#logoname a:hover {
   color: white;
   background-color: black; 
 }
+
 .connect {
   border-radius: 5px;
   padding: 10px;
@@ -62,13 +64,71 @@ body{
 .connect:hover .connectsvg {
   filter: brightness(0) invert(1); /* quick way to make icon white */
 }
+/*for popedup action bar **/
+/* Pop-up action bar fixed at top */
+.popedUpActionBar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* stay on top */
+}
 
+/* Container for option buttons */
+.optionBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* wraps nicely on smaller screens */
+}
 
+/* Each button box */
+.optionBox span {
+  width: 150px;
+  display: flex;              /* make text + icon in a row */
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
+  gap: 8px;                   /* space between text & icon */
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 30px;               /* space between boxes */
+  text-align: center;
+  background-color: white;
+  font-family: cursive;       /* optional: keep style inside */
+  color: black;
+  transition: all 0.3s ease;  /* smooth hover effect */
+}
+
+/* Link inside optionBox: remove underline */
+.optionBox a {
+  text-decoration: none;
+}
+
+/* Icons */
+.optionBox img {
+  padding-left: 40px;
+  width: 25px;
+  height: 25px;
+}
+
+.optionBox span:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+.optionBox span:hover img{
+    filter: brightness(0) invert(1); /* quick way to make icon white */
+}
 
 
 /* For mobile screeen */
 
-@media (max-width: 749px) {
+@media (max-width: 970px) {
 
   .nav-bar-top,  /* or your navbar container class */
   #topBar {      /* or your specific navbar ID */
