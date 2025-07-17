@@ -1,0 +1,77 @@
+body{
+    background-color: #b9b9b9;
+}
+.nav-bar-top{
+    width: 100%;
+    font-family:  cursive;
+}
+
+#topBar {
+  width: 85%;
+  height: 60px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;  /* items go to left & right ends */
+  align-items: center;
+  padding: 0 20px;  /* optional side padding */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;  /* space between icon & text */
+}
+#loganame,a{
+    text-decoration: none;
+  font-family: fantasy;     /* your chosen font */
+  font-style: normal;       /* ensures not italic */
+  color: black; 
+  padding: 5px;
+  border-radius: 5px;
+}
+#loganame,a:hover{
+  color: white;
+  background-color: black; 
+}
+.connect {
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke ;
+  color: black;
+}
+
+.connectsvg {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  color: black;
+}
+
+.connect:hover {
+  font-size: larger;
+    font-weight: bold;
+    background-color: black;
+    color: whitesmoke;
+    padding: 7px;
+}
+.connect:hover .connectsvg {
+  filter: brightness(0) invert(1); /* quick way to make icon white */
+}
+
+
+
+
+/* For mobile screeen */
+
+@media (max-width: 749px) {
+
+  .nav-bar-top,  /* or your navbar container class */
+  #topBar {      /* or your specific navbar ID */
+    display: none;
+  }
+}
