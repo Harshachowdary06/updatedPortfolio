@@ -4,37 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Sai Sri Harsha Pemmasani</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-        
-    <div class="nav-bar-top" id="nav-bar-top">
-    <nav class="topBar" id="topBar">
-        <div class="left">
-        <span id="logoname"> <a href="#">SSH</a> </span>
-        <span class="whoami" id="whoami">
-            Developer,   Debugger,   Cloud Engineer,   Problem Solver
-        </span>
-        </div>
-        <span class="connect" id="connect" onclick="openPopUp()">
-        <img class="connectsvg" src="assets/icons/connect.svg" alt="connect Image"> Connect
-        </span>
-    </nav>
-    </div>
+    <header class="nav-bar-top" id="nav-bar-top">
+        <nav class="topBar" id="topBar">
+            <div class="left">
+                <span id="logoname"><a href="index.html">SSH</a></span>
+                <span class="whoami" id="whoami">
+                    Developer, Debugger, Cloud Engineer, Problem Solver
+                </span>
+            </div>
+            <span class="connect" id="connect" onclick="openPopUp()">
+                <img class="connectsvg" src="assets/icons/connect.svg" alt="Connect"> Connect
+            </span>
+        </nav>
+    </header>
 
-    <div class="popedUpActionBar" id="popedUpActionBar">
-
+    <section class="popedUpActionBar" id="popedUpActionBar">
         <div class="optionBox" id="optionBox">
-            <a href=""><span class="Email" id="Email">Email <img src="assets/icons/email.svg" alt="email image"></span></a>
-            <a href=""><span class="linkedin" id="linkedin">linkedin <img src="assets/icons/linkedin.svg" alt="linkedin image"></span></a>
-            <a href=""><span class="github" id="github">github <img src="assets/icons/github.svg" alt="github image"></span></a>
-            <a href="#"  onclick="closePopUP()"; return false;><span class="close" id="close" >close <img src="assets/icons/close.svg" alt="close"></span></a>
-            
+            <a href="mailto:sai@example.com">
+                <span class="Email" id="Email">Email <img src="assets/icons/email.svg" alt="Email"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/sai-sri-harsha-pemmasani/" target="_blank">
+                <span class="linkedin" id="linkedin">LinkedIn <img src="assets/icons/linkedin.svg" alt="LinkedIn"></span>
+            </a>
+            <a href="https://github.com/yourusername" target="_blank">
+                <span class="github" id="github">GitHub <img src="assets/icons/github.svg" alt="GitHub"></span>
+            </a>
+            <a href="#" onclick="closePopUP(); return false;">
+                <span class="close" id="close">Close <img src="assets/icons/close.svg" alt="Close"></span>
+            </a>
         </div>
+    </section>
 
-    </div>
+    <main>
+        <section class="intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This website showcases my skills, experience, and projects. It's built with modern design principles to create a responsive and professional presence.</p>
+        </section>
 
-    
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I'm Sai Sri Harsha Pemmasani, a passionate developer skilled in cloud technologies, debugging, and software engineering. I love solving complex problems and building scalable solutions.</p>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> Description of your first major project.</li>
+                <li><strong>Project 2:</strong> Description of your second major project.</li>
+                <li><strong>Project 3:</strong> Description of your third major project.</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+            <ul>
+                <li>Email: <a href="mailto:sai@example.com">sai@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/sai-sri-harsha-pemmasani/" target="_blank">Sai Sri Harsha Pemmasani</a></li>
+                <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
