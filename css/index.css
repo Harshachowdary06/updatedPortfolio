@@ -183,4 +183,8 @@ body {
     /* or your specific navbar ID */
     display: none;
   }
+
+  .myName {
+  margin-top: 25vh;
+}
 }
