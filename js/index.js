@@ -9,7 +9,7 @@ function openPopUp() {
   popupActionNavBar.style.display = "flex";
 }
 
-document.getElementById("scrollDown").addEventListener("click", () => {
+document.getElementById("scrollSection2").addEventListener("click", () => {
   document
     .getElementsByClassName("secondSection")[0]
     .scrollIntoView({ behavior: "smooth" });

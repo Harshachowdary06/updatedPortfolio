@@ -163,12 +163,21 @@ body {
   position: relative;
   z-index: 2;
 }
-
+#scrollSection2{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 85vh;
+  left: 45%;
+  
+}
 .arrow-down {
   width: 35px;
   height: 35px;
+  margin-left:23px;
+  margin-top: 10px;
   background: linear-gradient(0deg, white ,black,grey);
-  background-size: 100% 400%;      /* taller gradient for vertical scroll */
+  background-size: 400% 400%;      /* taller gradient for vertical scroll */
   clip-path: polygon(
     0% 0%,       /* left top */
     50% 100%,    /* center bottom point */
@@ -176,10 +185,7 @@ body {
     85% 0%,      /* inward fold right */
     50% 70%,     /* inner bottom tip */
     15% 0%       /* inward fold left */
-  );position: fixed;
-  top: 85vh;
-  left: 50%;
-  transform: translateX(-50%);
+  );
   animation: gradientScrollDown 0.7s ease infinite, scaleChanger 3s ease infinite;
 }
 
