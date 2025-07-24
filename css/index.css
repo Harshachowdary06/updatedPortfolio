@@ -147,14 +147,11 @@ body {
 
   background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
   background-size: 400% 400%; /* makes the gradient large enough to scroll over */
-  
-  -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-
   animation: gradientMove 3s ease infinite;
   animation-direction: alternate;
   font-weight: lighter;
+  color: transparent;
 }
 .secondSection {
   width: 100%;
@@ -167,25 +164,33 @@ body {
   position: relative;
   z-index: 2;
 }
+
+
 .scrollDown {
-  padding: 0; /* Remove default padding */
-  border: none; /* Remove default border if needed */
-  background: none; /* Remove default background if needed */
-  margin-left: 6dvw;
+   position: fixed;
   top: 90vh;
-  position: fixed;
+  left: 46%;
+  padding: 0;
+  background: none;
+  border: solid black;
+  margin: 0;
+
+  
 }
 
 .scrollDownImg {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  display: block;          /* ensures margin works if needed */
 }
+
 .scrollDownImg:hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+
 
 /* For mobile screeen */
 
@@ -198,9 +203,5 @@ body {
 
   .myName {
   margin-top: 25vh;
-}
-.scrollDown {
-  top: 80vh;
-  left: 10vw;
 }
 }
