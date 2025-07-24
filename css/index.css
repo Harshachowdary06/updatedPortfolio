@@ -143,6 +143,9 @@ body {
   font-family: cursive;
   font-size: 7dvw;
   text-align: center;
+  background-image: linear-gradient(90deg, violet, indigo,blue,green,orange,red );
+  background-clip: text;
+  color: hsl(0 0% 100% / 0.2);
 }
 .secondSection {
   width: 100%;
@@ -189,5 +192,10 @@ body {
 }
 .scrollDown {
   top: 80vh;
+  left: 10vw;
 }
+}
+
+
+.myNamesection h1 {
 }

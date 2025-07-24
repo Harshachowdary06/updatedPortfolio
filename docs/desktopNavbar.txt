@@ -1,0 +1,39 @@
+ <nav class="topBar" id="topBar">
+          <div class="left">
+            <span id="logoname"> <a href="#">SSH</a> </span>
+            <span class="whoami" id="whoami">
+              Developer, Debugger, Cloud Engineer, Problem Solver
+            </span>
+          </div>
+          <span class="connect" id="connect" onclick="openPopUp()">
+            <img
+              class="connectsvg"
+              src="assets/icons/connect.svg"
+              alt="connect Image"
+            />
+            Connect
+          </span>
+        </nav>
+        <div class="popedUpActionBar" id="popedUpActionBar">
+        <div class="optionBox" id="optionBox">
+          <a href=""
+            ><span class="Email" id="Email"
+              >Email
+              <img src="assets/icons/email.svg" alt="email image" /></span
+          ></a>
+          <a href=""
+            ><span class="linkedin" id="linkedin"
+              >linkedin
+              <img src="assets/icons/linkedin.svg" alt="linkedin image" /></span
+          ></a>
+          <a href=""
+            ><span class="github" id="github"
+              >github
+              <img src="assets/icons/github.svg" alt="github image" /></span
+          ></a>
+          <a href="#" onclick="closePopUP()" ; return false;
+            ><span class="close" id="close"
+              >close <img src="assets/icons/close.svg" alt="close" /></span
+          ></a>
+        </div>
+      </div>
