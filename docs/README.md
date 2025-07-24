@@ -5,6 +5,12 @@
 
 ---
 
+#### Note
+
+##### This website is intentionally made using basic and common web technologies to flex my skills set and show my understanding with the concepts .   
+
+---
+
 ## Here is my project structure
 
 ```plaintext
