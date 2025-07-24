@@ -140,12 +140,21 @@ body {
 }
 
 .myName {
+  
   font-family: cursive;
   font-size: 7dvw;
   text-align: center;
-  background-image: linear-gradient(90deg, violet, indigo,blue,green,orange,red );
+
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%; /* makes the gradient large enough to scroll over */
+  
+  -webkit-background-clip: text;
   background-clip: text;
-  color: hsl(0 0% 100% / 0.2);
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 3s ease infinite;
+  animation-direction: alternate;
+  font-weight: lighter;
 }
 .secondSection {
   width: 100%;
@@ -194,8 +203,4 @@ body {
   top: 80vh;
   left: 10vw;
 }
-}
-
-
-.myNamesection h1 {
 }
