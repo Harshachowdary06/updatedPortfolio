@@ -1,0 +1,15 @@
+.menu {
+  position: fixed;
+  top: 90vh;
+  left: 28vw;
+  width: 45vw;
+  height: 7vh;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  display: grid;                /* FLEX: make children align easily */
+  justify-content: center;      /* center children horizontally */
+  align-items: center;          /* center children vertically */
+  gap: 2vw;                     /* optional: spacing between options */
+}
+
+
