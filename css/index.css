@@ -218,4 +218,9 @@ body {
   .myName {
   margin-top: 25vh;
 }
+.arrow-down{
+  
+  width: 15px;
+  height: 15px;
+}
 }
