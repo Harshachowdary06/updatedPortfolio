@@ -144,11 +144,10 @@ body {
   font-family: cursive;
   font-size: 7dvw;
   text-align: center;
-
-  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+  background: linear-gradient(270deg, white ,black,grey);
   background-size: 400% 400%; /* makes the gradient large enough to scroll over */
   background-clip: text;
-  animation: gradientMove 3s ease infinite;
+  animation: gradientMove 7s ease infinite;
   animation-direction: alternate;
   font-weight: lighter;
   color: transparent;
@@ -165,32 +164,48 @@ body {
   z-index: 2;
 }
 
-
-.scrollDown {
-   position: fixed;
-  top: 90vh;
-  left: 46%;
-  padding: 0;
-  background: none;
-  border: solid black;
-  margin: 0;
-
-  
+.arrow-down {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(0deg, white ,black,grey);
+  background-size: 100% 400%;      /* taller gradient for vertical scroll */
+  clip-path: polygon(
+    0% 0%,       /* left top */
+    50% 100%,    /* center bottom point */
+    100% 0%,     /* right top */
+    85% 0%,      /* inward fold right */
+    50% 70%,     /* inner bottom tip */
+    15% 0%       /* inward fold left */
+  );position: fixed;
+  top: 85vh;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: gradientScrollDown 0.7s ease infinite, scaleChanger 3s ease infinite;
 }
+
+
+
+
+
+/*
 
 .scrollDownImg {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  display: block;          /* ensures margin works if needed */
+  mix-blend-mode: screen;
+  background: linear-gradient(360deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%; 
+  display: block;          /* ensures margin works if needed 
+  animation: scaleChanger 3s infinite ;
 }
 
-.scrollDownImg:hover {
+/*.scrollDownImg:hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-
+*/
 
 /* For mobile screeen */
 
@@ -200,7 +215,6 @@ body {
     /* or your specific navbar ID */
     display: none;
   }
-
   .myName {
   margin-top: 25vh;
 }
