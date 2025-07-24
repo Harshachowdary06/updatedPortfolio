@@ -20,10 +20,3 @@ function openPopUp() {
   const popupActionNavBar = document.getElementById("popedUpActionBar");
   popupActionNavBar.style.display = "flex";
 }
-
-document.getElementById("scrollDown").addEventListener("click", () => {
-  document
-    .getElementsByClassName("secondSection")[0]
-    .scrollIntoView({ behavior: "smooth" });
-});
-
