@@ -137,10 +137,11 @@ body {
   display: block;
   position: fixed;
   overflow: hidden;
+  text-align: center;
 }
 
 .myName {
-  
+  margin-top: 5vh;
   font-family: cursive;
   font-size: 7dvw;
   text-align: center;
@@ -164,18 +165,17 @@ body {
   z-index: 2;
 }
 #scrollSection2{
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  top: 85vh;
-  left: 45%;
-  
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
 }
 .arrow-down {
   width: 35px;
   height: 35px;
-  margin-left:23px;
-  margin-top: 10px;
+  box-sizing: border-box;
+  margin-left: 30px;
+  border: 5px solid black;
   background: linear-gradient(0deg, white ,black,grey);
   background-size: 400% 400%;      /* taller gradient for vertical scroll */
   clip-path: polygon(
@@ -187,6 +187,14 @@ body {
     15% 0%       /* inward fold left */
   );
   animation: gradientScrollDown 0.7s ease infinite, scaleChanger 3s ease infinite;
+}
+
+.profileImage{
+  width: 250px;              /* or any size you want */
+  height: 250px;
+  background-color: gray;    /* placeholder color; replace with background-image or <img> later */
+  border-radius: 50%;        /* make it circular */
+  margin: 10vh auto;
 }
 
 
@@ -222,11 +230,17 @@ body {
     display: none;
   }
   .myName {
-  margin-top: 25vh;
+  margin-top: 5vh;
+}
+#scrollSection2{
+  margin: 10vh auto;
 }
 .arrow-down{
-  
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
+}
+.profileImage{
+  width: 250px;              /* or any size you want */
+  height: 350px;
 }
 }
