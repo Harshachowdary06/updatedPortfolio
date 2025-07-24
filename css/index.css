@@ -142,8 +142,7 @@ body {
 .myName {
   font-family: cursive;
   font-size: 7dvw;
-  margin-top: 25dvh;
-  margin-left: 5dvw;
+  text-align: center;
 }
 .secondSection {
   width: 100%;
