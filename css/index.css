@@ -238,10 +238,11 @@ body {
     height: 2vh;
     background: linear-gradient(270deg, white, black, grey);
     background-size: 400% 400%; /* makes the gradient large enough to scroll over */
-    animation: gradientMove 3s ease infinite;
+    animation: gradientMove 2s ease infinite;
     animation-direction: alternate;
     font-weight: lighter;
     rotate: 270deg;
+    z-index: 5;
   }
   .mobileMenuBar h3 {
     align-content: end;
