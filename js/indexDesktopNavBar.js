@@ -21,12 +21,13 @@ function openPopUp() {
   popupActionNavBar.style.display = "flex";
 }
 
+
 window.addEventListener('scroll', () => {
   const menu = document.getElementById('menu');
   const secondSection = document.querySelector('.secondSection');
   const rect = secondSection.getBoundingClientRect();
 
-  if (rect.top < window.innerHeight && rect.bottom > 0) {
+  if (rect.top + 100 < window.innerHeight && rect.bottom > 0) {
     // Section is visible
     menu.style.display = 'block';
   } else {

@@ -1,0 +1,12 @@
+{
+  "desktop":{
+    "cssFiles":[
+      "css/desktopMenu.css",
+      "css/mobileMenu.css"
+    ],
+    "jsFiles":[
+      
+
+    ]
+  }
+}

@@ -145,7 +145,7 @@ body {
   font-family: cursive;
   font-size: 7dvw;
   text-align: center;
-  background: linear-gradient(270deg, white ,black,grey);
+  background: linear-gradient(270deg, white, black, grey);
   background-size: 400% 400%; /* makes the gradient large enough to scroll over */
   background-clip: text;
   animation: gradientMove 7s ease infinite;
@@ -162,9 +162,9 @@ body {
   margin-top: 100vh;
   right: 0px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
-#scrollSection2{
+#scrollSection2 {
   width: 60px;
   justify-content: center;
   align-items: center;
@@ -176,50 +176,33 @@ body {
   box-sizing: border-box;
   margin-left: 30px;
   border: 5px solid black;
-  background: linear-gradient(0deg, white ,black,grey);
-  background-size: 400% 400%;      /* taller gradient for vertical scroll */
+  background: linear-gradient(0deg, white, black, grey);
+  background-size: 400% 400%; /* taller gradient for vertical scroll */
   clip-path: polygon(
-    0% 0%,       /* left top */
-    50% 100%,    /* center bottom point */
-    100% 0%,     /* right top */
-    85% 0%,      /* inward fold right */
-    50% 70%,     /* inner bottom tip */
-    15% 0%       /* inward fold left */
+    0% 0%,
+    /* left top */ 50% 100%,
+    /* center bottom point */ 100% 0%,
+    /* right top */ 85% 0%,
+    /* inward fold right */ 50% 70%,
+    /* inner bottom tip */ 15% 0% /* inward fold left */
   );
-  animation: gradientScrollDown 0.7s ease infinite, scaleChanger 3s ease infinite;
+  animation: gradientScrollDown 0.7s ease infinite,
+    scaleChanger 3s ease infinite;
 }
 
-.profileImage{
-  width: 250px;              /* or any size you want */
+.profileImage {
+  width: 250px; /* or any size you want */
   height: 250px;
-  background-color: gray;    /* placeholder color; replace with background-image or <img> later */
-  border-radius: 50%;        /* make it circular */
+  background-color: gray; /* placeholder color; replace with background-image or <img> later */
+  border-radius: 50%; /* make it circular */
   margin: 7vh auto;
 }
-
-
-
-
-
-/*
-
-.scrollDownImg {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  mix-blend-mode: screen;
-  background: linear-gradient(360deg, red, orange, yellow, green, blue, indigo, violet);
-  background-size: 400% 400%; 
-  display: block;          /* ensures margin works if needed 
-  animation: scaleChanger 3s infinite ;
+.mobileMenuBar {
+  display: none;
 }
-
-/*.scrollDownImg:hover {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.windowStyleMM {
+  display: none;
 }
-*/
 
 /* For mobile screeen */
 
@@ -230,17 +213,74 @@ body {
     display: none;
   }
   .myName {
-  margin-top: 5vh;
-}
-#scrollSection2{
-  margin: 10vh auto;
-}
-.arrow-down{
-  width: 25px;
-  height: 25px;
-}
-.profileImage{
-  width: 250px;              /* or any size you want */
-  height: 350px;
-}
+    margin-top: 5vh;
+  }
+  #scrollSection2 {
+    margin: 10vh auto;
+  }
+  .arrow-down {
+    width: 25px;
+    height: 25px;
+  }
+  .profileImage {
+    width: 250px; /* or any size you want */
+    height: 350px;
+  }
+  #floatingMenu {
+    display: none;
+  }
+  .mobileMenuBar {
+    display: block;
+    position: fixed;
+    top: 8vh;
+    right: -25px;
+    width: 15vw;
+    height: 2vh;
+    background: linear-gradient(270deg, white, black, grey);
+    background-size: 400% 400%; /* makes the gradient large enough to scroll over */
+    animation: gradientMove 3s ease infinite;
+    animation-direction: alternate;
+    font-weight: lighter;
+    rotate: 270deg;
+  }
+  .mobileMenuBar h3 {
+    align-content: end;
+    font-size: 15px;
+    margin: auto;
+    background: linear-gradient(270deg, grey, white, black);
+    background-size: 200% 200%; /* makes the gradient large enough to scroll over */
+    background-clip: text;
+    animation: gradientMove 2s ease infinite;
+    animation-direction: alternate;
+    font-weight: lighter;
+    color: transparent;
+  }
+  .mobileMenuBar {
+    scale: 1.5;
+  }
+  .windowStyleMM {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, violet, indigo, blue, orange);
+    opacity: 1;
+    background-size: 400% 400%; /* makes the gradient large enough to scroll over */
+    /*animation: gradientMove 3s ease infinite;
+    */
+    animation-direction: alternate;
+    z-index: 5;
+    position: fixed;
+  }
+
+  .windowStyleMM li{
+    background-color: black;
+    color: whitesmoke;
+    list-style: none;
+    margin: 30px auto;
+    width: 30vh;
+    height: 20vh;
+  }
+  .secondSection{
+    z-index: 2;
+  }
 }
