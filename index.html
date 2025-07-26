@@ -5,33 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Sai Sri Harsha Pemmasani</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/desktopMenu.css" /> 
+    <link rel="stylesheet" href="css/desktopMenu.css" />
     <link rel="stylesheet" href="css/indexKeyFrames.css" />
+    <link rel="stylesheet" href="css/mobileMenu.css" />
     <script src="js/index.js" defer></script>
     <script src="js/indexDesktopNavBar.js" defer></script>
+    <script src="js/mobileMenu.js" defer></script>
   </head>
   <body>
     <div class="firstSection">
-      
-      <div class="mobileMenu">
-        <div class="mobileMenuBar">
-        <h3>Menu</h3>
-      </div>
-
-      <div class="windowStyleMM">
-        <ul>
-          <li>About</li>
-          <li>Work</li>
-          <li>Products</li>
-          <li>Game</li>
-          <li>Contact</li>
-        </ul>
-
-
-
-      </div>
-
-      </div>
       <div class="nav-bar-top" id="nav-bar-top"></div>
 
       <div class="profileImage"></div>
@@ -45,18 +27,54 @@
       </div>
     </div>
     <div class="secondSection">
-      <div id="floatingMenu">
-        
-      <div class="menu"  id="menu">
-     
-        <ul>
-          <li>About</li>
-          <li>Work</li>
-          <li>Products</li>
-          <li>Contact</li>
-        </ul>
+      <!-- 
+      ====================================
 
+          Mobile view menu section begins
+      =====================================
+      -->
+
+      <div class="mobileMenu">
+            <div class="mobileMenuBar" id="mobileMenuBar">
+                  <h3 id="menuData"> Menu </h3>
+            </div>
+
+            <div class="mobileMenuScreen" id="mobileMenuScreen">
+
+              <div class="mmMenuOption" id="About">About</div>
+              
+              <div class="mmMenuOption" id="Work">Work</div>
+
+              <div class="mmMenuOption" id="Projects"><h2>Projects</h2></div>
+
+              
+              <div class="mmMenuOption" id="funFacts">FunFacts</div>
+              
+              <div class="mmMenuOption" id="Connect">Connect</div>
+              
+              <div class="mmMenuOption" id="Games">Games</div>
+
+            </div>
       </div>
+      <!-- 
+      ====================================
+          Mobile view menu section end
+    ======================================
+      -->
+
+      <!-- 
+      Desktop  menu section
+      -->
+
+      <div id="floatingMenu">
+        <div class="menu" id="menu">
+          <ul>
+            <li>About</li>
+            <li>Work</li>
+            <li>Products</li>
+            <li>Contact</li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
