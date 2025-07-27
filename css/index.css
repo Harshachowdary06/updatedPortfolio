@@ -145,7 +145,7 @@ body {
   font-family: cursive;
   font-size: 7dvw;
   text-align: center;
-  background: linear-gradient(270deg, white, black, grey);
+  background: linear-gradient(270deg, white, green, rebeccapurple);
   background-size: 400% 400%; /* makes the gradient large enough to scroll over */
   background-clip: text;
   animation: gradientMove 7s ease infinite;
@@ -155,7 +155,7 @@ body {
 }
 .secondSection {
   width: 100%;
-  height: 100vh;
+  height: 500vh;
   display: inline-block;
   background-color: black;
   border-radius: 10px;
@@ -163,6 +163,7 @@ body {
   right: 0px;
   position: relative;
   z-index: 1;
+  color: white;
 }
 #scrollSection2 {
   width: 60px;

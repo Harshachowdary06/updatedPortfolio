@@ -43,3 +43,15 @@ function addingDesktopMenubars(){
         }
     })
 }
+
+// adding aboutme to index.html
+
+
+fetch('docs/About.txt')
+.then(response => {
+
+  if(!response.ok) throw new Error('file not loaded');
+  return response.text();
+}).then(data =>{
+  document.getElementById('aboutMeData').innerHTML=data;
+})

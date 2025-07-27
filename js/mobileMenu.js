@@ -9,6 +9,6 @@ mobileMenuBar.onclick = function (){
   }
   else{
     mobileMenuScreen.display='grid';
-    menuData.innerText = 'Close Menu';
+    menuData.innerText = 'Close';
   }
 };

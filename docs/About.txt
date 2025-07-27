@@ -1,0 +1,5 @@
+<span>Hey there! I’m Harsha — a passionate software engineer who loves turning ideas into real, working code.
+I thrive on solving complex problems, building modern web apps, and learning something new every day.
+Outside of coding, you’ll probably find me exploring new technologies, sketching UI concepts, or sipping way too much coffee.
+Let’s build something awesome together!
+</span>
